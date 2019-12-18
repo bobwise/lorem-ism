@@ -1,25 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main  class="sprk-o-CenteredColumn sprk-u-ptl">
+      <h1 class="sprk-b-TypeDisplayTwo sprk-b-PageTitle">Hello, Spark! 👋</h1>
+      <h1 class="sprk-b-TypeDisplaySix sprk-u-mtl">Add components here</h1>
+    </main>
   );
 }
 
