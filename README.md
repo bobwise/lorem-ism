@@ -1,7 +1,7 @@
-# ✨ spark-starter-react `kitchen-sink`
+# ✨ spark-starter-react
 This is a boilerplate repository for developing with Spark React components.
 
-This repository includes the Spark Design System assets, all required dependencies, and a page that includes all Spark components in action.
+This repository includes the Spark Design System assets and all required dependencies. Follow the steps below to get started.
 
 ## Setup
 
@@ -14,3 +14,7 @@ This repository includes the Spark Design System assets, all required dependenci
 
 1. Go through **Setup**.
 1. Run `npm run start` in your project directory.
+
+## Next Steps
+
+Check out the **Spark Installation Guide for React**. (coming soon)
