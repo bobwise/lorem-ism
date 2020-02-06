@@ -32,8 +32,8 @@
     ]
   },
   "devDependencies": {
-    "@sparkdesignsystem/spark": "^12.2.0",
-    "@sparkdesignsystem/spark-react": "^1.3.0",
+    "@sparkdesignsystem/spark": "^12.3.0",
+    "@sparkdesignsystem/spark-react": "^1.4.1",
     "formik": "^2.0.8",
     "node-sass": "^4.13.0",
     "react-router-dom": "^5.1.2"
