@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lorem-ism/static/css/main.00cae572.chunk.css",
-    "main.js": "/lorem-ism/static/js/main.909c9807.chunk.js",
-    "main.js.map": "/lorem-ism/static/js/main.909c9807.chunk.js.map",
+    "main.css": "/lorem-ism/static/css/main.ca708b47.chunk.css",
+    "main.js": "/lorem-ism/static/js/main.f91841c9.chunk.js",
+    "main.js.map": "/lorem-ism/static/js/main.f91841c9.chunk.js.map",
     "runtime-main.js": "/lorem-ism/static/js/runtime-main.c21bed46.js",
     "runtime-main.js.map": "/lorem-ism/static/js/runtime-main.c21bed46.js.map",
-    "static/js/2.4b6c6d0f.chunk.js": "/lorem-ism/static/js/2.4b6c6d0f.chunk.js",
-    "static/js/2.4b6c6d0f.chunk.js.map": "/lorem-ism/static/js/2.4b6c6d0f.chunk.js.map",
+    "static/js/2.ce381356.chunk.js": "/lorem-ism/static/js/2.ce381356.chunk.js",
+    "static/js/2.ce381356.chunk.js.map": "/lorem-ism/static/js/2.ce381356.chunk.js.map",
     "index.html": "/lorem-ism/index.html",
-    "precache-manifest.23fe58d26dfb1a6c89f63e52528fec24.js": "/lorem-ism/precache-manifest.23fe58d26dfb1a6c89f63e52528fec24.js",
+    "precache-manifest.873c045f4ada93f5fa54b1dee5235bb1.js": "/lorem-ism/precache-manifest.873c045f4ada93f5fa54b1dee5235bb1.js",
     "service-worker.js": "/lorem-ism/service-worker.js",
-    "static/css/main.00cae572.chunk.css.map": "/lorem-ism/static/css/main.00cae572.chunk.css.map",
-    "static/js/2.4b6c6d0f.chunk.js.LICENSE": "/lorem-ism/static/js/2.4b6c6d0f.chunk.js.LICENSE"
+    "static/css/main.ca708b47.chunk.css.map": "/lorem-ism/static/css/main.ca708b47.chunk.css.map",
+    "static/js/2.ce381356.chunk.js.LICENSE": "/lorem-ism/static/js/2.ce381356.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.c21bed46.js",
-    "static/js/2.4b6c6d0f.chunk.js",
-    "static/css/main.00cae572.chunk.css",
-    "static/js/main.909c9807.chunk.js"
+    "static/js/2.ce381356.chunk.js",
+    "static/css/main.ca708b47.chunk.css",
+    "static/js/main.f91841c9.chunk.js"
   ]
 }
