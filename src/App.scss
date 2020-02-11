@@ -1,2 +1,8 @@
 @import "./styles.scss";
 @import '../node_modules/@sparkdesignsystem/spark/spark.scss';
+
+.outputContainer {
+    border: 1px solid $sprk-gray-dark;
+    border-radius: 4px;
+    
+}
