@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lorem-ism/precache-manifest.873c045f4ada93f5fa54b1dee5235bb1.js"
+  "/lorem-ism/precache-manifest.5ab90146e20cefe6e9d09529f7287e61.js"
 );
 
 self.addEventListener('message', (event) => {

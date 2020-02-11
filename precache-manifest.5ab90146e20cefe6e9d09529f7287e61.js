@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e344cc064f347741a93b925c7975c87",
+    "revision": "161ad3e8d50f1ddcc600332669bf1cd2",
     "url": "/lorem-ism/index.html"
   },
   {
