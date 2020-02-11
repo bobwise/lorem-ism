@@ -1,7 +1,5 @@
-# ✨ spark-starter-react
-This is a boilerplate repository for developing with Spark React components.
-
-This repository includes the Spark Design System assets and all required dependencies. Follow the steps below to get started.
+# `lorem-ism`
+generate random isms
 
 ## Setup
 
@@ -14,7 +12,3 @@ This repository includes the Spark Design System assets and all required depende
 
 1. Go through **Setup**.
 1. Run `npm run start` in your project directory.
-
-## Next Steps
-
-Check out the **Spark Installation Guide for React**. (coming soon)
