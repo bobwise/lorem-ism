@@ -55,10 +55,10 @@ class App extends Component {
       <main className="sprk-o-CenteredColumn sprk-u-pal">
         <IconSet></IconSet>
         <h1 className="sprk-b-TypeDisplayTwo sprk-b-PageTitle">Lorem Ism</h1>
-        <h1 ref={this.subtitleRef} className="sprk-b-TypeDisplayFive sprk-u-FontStyle--italic sprk-u-mvm">Lorem Ism</h1>
-        <p  className="sprk-b-TypeBodyTwo sprk-u-mvl">Tired of pseudo-Latin? Spice up your mockups with this ISM-inspired text generator!</p>
-        <hr />
-
+        <h1 ref={this.subtitleRef} className="sprk-b-TypeDisplayFive sprk-u-FontStyle--italic sprk-u-mvm">Subtitle</h1>
+        <p className="sprk-b-TypeBodyTwo sprk-u-mtl">Tired of pseudo-Latin? Spice up your mockups with this ISM-inspired text generator!</p>
+        <p className="sprk-b-TypeBodyTwo sprk-u-mts sprk-u-mbl">Brought to you by the <a className="sprk-b-Link" href="http://www.sparkdesignsystem.com" target="_blank">Spark Design System</a>.</p>
+        <hr/>
         <SprkStack splitAt="small">
           <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
             <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
@@ -80,6 +80,7 @@ class App extends Component {
 
 
         <p ref={this.outputRef} className="sprk-u-mvl sprk-u-pam outputContainer"></p>
+
       </main>
     );
   }
