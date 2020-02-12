@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.subtitleRef.current.innerText = this.generateRandomIsm();
+    this.subtitleRef.current.innerText = "\"" + this.generateRandomIsm() + "\"";
   }
 
   generateRandomIsm() {
@@ -55,7 +55,8 @@ class App extends Component {
       <main className="sprk-o-CenteredColumn sprk-u-pal">
         <IconSet></IconSet>
         <h1 className="sprk-b-TypeDisplayTwo sprk-b-PageTitle">Lorem Ism</h1>
-        <h1 ref={this.subtitleRef} className="sprk-b-TypeDisplaySix sprk-u-mtl">Random ism here</h1>
+        <h1 ref={this.subtitleRef} className="sprk-b-TypeDisplayFive sprk-u-FontStyle--italic sprk-u-mvm">Lorem Ism</h1>
+        <p  className="sprk-b-TypeBodyTwo sprk-u-mvl">Tired of pseudo-Latin? Spice up your mockups with this ISM-inspired text generator!</p>
         <hr />
 
         <SprkStack splitAt="small">
