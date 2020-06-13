@@ -1,27 +1,19 @@
-import React, { Component } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './App.scss';
-import IconSet from './components/IconSet/IconSet';
 import { SprkButton, SprkStack, SprkStackItem } from '@sparkdesignsystem/spark-react';
 import seedFile from './seed.json';
 
 var MarkovChain = require('markovchain');
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+const App = () => {
+  const subtitleRef = useRef(null)
+  const outputRef = useRef(null)
 
-    this.subtitleRef = React.createRef();
-    this.outputRef = React.createRef();
+  useEffect(() => {
+    subtitleRef.current.innerText = generateRandomIsm();
+  }, [])
 
-    this.generateRandomIsm = this.generateRandomIsm.bind(this);
-    this.generateIsmBlock = this.generateIsmBlock.bind(this);
-  }
-
-  componentDidMount() {
-    this.subtitleRef.current.innerText = "\"" + this.generateRandomIsm() + "\"";
-  }
-
-  generateRandomIsm() {
+  const generateRandomIsm = () => {
     var seed = seedFile.isms.join(' ');
 
     var quotes = new MarkovChain(seed);
@@ -36,50 +28,53 @@ class App extends Component {
         }
       ).end().process() + ".";
 
-    return (output);
+    if (seedFile.isms.includes(output)){
+      // this is a dupe; try again
+      return generateRandomIsm();
+    }
+
+    return output;
   }
 
-  generateIsmBlock(sentence_count) {
+  const generateIsmBlock = (sentence_count) => {
     var output = "";
 
     for (var x = 0; x < sentence_count; x++) {
-      output += this.generateRandomIsm();
+      output += generateRandomIsm();
       output += " ";
     }
 
     return output;
   }
 
-  render() {
-    return (
-      <main className="sprk-o-CenteredColumn sprk-u-pal">
-        <IconSet></IconSet>
-        <h1 className="sprk-b-TypeDisplayTwo sprk-b-PageTitle">Lorem Ism</h1>
-        <h1 ref={this.subtitleRef} className="sprk-b-TypeDisplayFive sprk-u-FontStyle--italic sprk-u-mvm">Subtitle</h1>
-        <p className="sprk-b-TypeBodyTwo sprk-u-mtl">Tired of pseudo-Latin? Spice up your mockups with this ISM-inspired text generator!</p>
-        <p className="sprk-b-TypeBodyTwo sprk-u-mts sprk-u-mbl">Brought to you by the <a className="sprk-b-Link" href="http://www.sparkdesignsystem.com" target="_blank">Spark Design System</a>.</p>
-        <hr/>
-        <SprkStack splitAt="small">
-          <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
-            <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
-              this.outputRef.current.innerText = this.generateIsmBlock(1);
-            }}>Make me an ISM</SprkButton>
-          </SprkStackItem>
-          <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
-            <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
-              this.outputRef.current.innerText = this.generateIsmBlock(10);
-            }}>A paragraph</SprkButton>
-          </SprkStackItem>
-          <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
-            <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
-              this.outputRef.current.innerText = this.generateIsmBlock(10) + "\n\n" + this.generateIsmBlock(10) + "\n\n" + this.generateIsmBlock(10);
-            }}>3 paragraphs</SprkButton></SprkStackItem>
-        </SprkStack>
+  return (
+    <main className="sprk-o-CenteredColumn sprk-u-pal">
+      <h1 className="sprk-b-TypeDisplayTwo sprk-b-PageTitle" aria-label="Lorem Izm">Lorem Ism</h1>
+      <h2 ref={subtitleRef} className="sprk-b-TypeDisplayFive sprk-u-FontStyle--italic sprk-u-mvm">Subtitle</h2>
+      <p className="sprk-b-TypeBodyTwo sprk-u-mtl">Tired of pseudo-Latin? Spice up your mockups with this ISM-inspired text generator!</p>
+      <p className="sprk-b-TypeBodyTwo sprk-u-mts sprk-u-mbl">
+        Powered by the <a className="sprk-b-Link" href="http://www.sparkdesignsystem.com" target="_blank" rel="noopener">Spark Design System</a>.</p>
+      <hr aria-hidden="true" />
+      <SprkStack splitAt="small">
+        <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
+          <SprkButton aria-label="Make me an izm" additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
+            outputRef.current.innerText = generateIsmBlock(1);
+          }}>Make me an ISM</SprkButton>
+        </SprkStackItem>
+        <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
+          <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
+            outputRef.current.innerText = generateIsmBlock(10);
+          }}>A paragraph</SprkButton>
+        </SprkStackItem>
+        <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
+          <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
+            outputRef.current.innerText = generateIsmBlock(10) + "\n\n" + generateIsmBlock(10) + "\n\n" + generateIsmBlock(10);
+          }}>3 paragraphs</SprkButton></SprkStackItem>
+      </SprkStack>
 
-        <p ref={this.outputRef} className="sprk-u-mvl sprk-u-pam outputContainer"></p>
-      </main>
-    );
-  }
+      <p ref={outputRef} className="sprk-u-mvl sprk-u-pam outputContainer"></p>
+    </main>
+  );
 }
 
 export default App;
