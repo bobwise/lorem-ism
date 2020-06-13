@@ -76,11 +76,7 @@ class App extends Component {
             }}>3 paragraphs</SprkButton></SprkStackItem>
         </SprkStack>
 
-
-
-
         <p ref={this.outputRef} className="sprk-u-mvl sprk-u-pam outputContainer"></p>
-
       </main>
     );
   }
