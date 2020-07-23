@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b090667298d75ab3b7cefc6d3cdae7d6",
+    "revision": "a94f5fc4d85027f481fc9b73c580ca44",
     "url": "/lorem-ism/index.html"
   },
   {
-    "revision": "909140f3afbedc746cd8",
+    "revision": "8135351c6d76a53ca678",
     "url": "/lorem-ism/static/css/main.950c016a.chunk.css"
   },
   {
-    "revision": "f6cfa4f0f9d2bb1ca380",
-    "url": "/lorem-ism/static/js/2.0cdeeaac.chunk.js"
+    "revision": "cb4a87f4063208243f73",
+    "url": "/lorem-ism/static/js/2.18e6ff05.chunk.js"
   },
   {
     "revision": "f863024c2d9d2f2bdd781cf3f534e630",
-    "url": "/lorem-ism/static/js/2.0cdeeaac.chunk.js.LICENSE.txt"
+    "url": "/lorem-ism/static/js/2.18e6ff05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "909140f3afbedc746cd8",
-    "url": "/lorem-ism/static/js/main.87b8c276.chunk.js"
+    "revision": "8135351c6d76a53ca678",
+    "url": "/lorem-ism/static/js/main.831c6ee1.chunk.js"
   },
   {
     "revision": "f93312a8af4aef786a7c",
