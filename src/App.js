@@ -53,7 +53,7 @@ const App = () => {
       <h2 ref={subtitleRef} className="sprk-b-TypeDisplayFive sprk-u-FontStyle--italic sprk-u-mvm">Subtitle</h2>
       <p className="sprk-b-TypeBodyTwo sprk-u-mtl">Tired of pseudo-Latin? Spice up your mockups with this ISM-inspired text generator!</p>
       <p className="sprk-b-TypeBodyTwo sprk-u-mts sprk-u-mbl">
-        Powered by the <a className="sprk-b-Link" href="http://www.sparkdesignsystem.com" target="_blank" rel="noopener">Spark Design System</a>.</p>
+      <a className="sprk-b-Link" href="http://www.sparkdesignsystem.com" target="_blank" rel="noopener">Powered by the Spark Design System.</a></p>
       <hr aria-hidden="true" />
       <SprkStack splitAt="small">
         <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
@@ -64,15 +64,15 @@ const App = () => {
         <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
           <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
             outputRef.current.innerText = generateIsmBlock(10);
-          }}>A paragraph</SprkButton>
+          }}>1 Paragraph</SprkButton>
         </SprkStackItem>
         <SprkStackItem additionalClasses="sprk-o-Stack__item--third@xs">
           <SprkButton additionalClasses="sprk-u-mrm sprk-u-mbm sprk-c-Button--full@s" onClick={() => {
             outputRef.current.innerText = generateIsmBlock(10) + "\n\n" + generateIsmBlock(10) + "\n\n" + generateIsmBlock(10);
-          }}>3 paragraphs</SprkButton></SprkStackItem>
+          }}>3 Paragraphs</SprkButton></SprkStackItem>
       </SprkStack>
 
-      <p ref={outputRef} className="sprk-u-mvl sprk-u-pam outputContainer"></p>
+      <p aria-live="polite" ref={outputRef} className="sprk-u-mvl sprk-u-pam outputContainer"></p>
     </main>
   );
 }
