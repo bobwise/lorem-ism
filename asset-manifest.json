@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lorem-ism/static/css/main.950c016a.chunk.css",
-    "main.js": "/lorem-ism/static/js/main.fa6546c4.chunk.js",
-    "main.js.map": "/lorem-ism/static/js/main.fa6546c4.chunk.js.map",
+    "main.js": "/lorem-ism/static/js/main.527cde3a.chunk.js",
+    "main.js.map": "/lorem-ism/static/js/main.527cde3a.chunk.js.map",
     "runtime-main.js": "/lorem-ism/static/js/runtime-main.e869c040.js",
     "runtime-main.js.map": "/lorem-ism/static/js/runtime-main.e869c040.js.map",
     "static/js/2.18e6ff05.chunk.js": "/lorem-ism/static/js/2.18e6ff05.chunk.js",
     "static/js/2.18e6ff05.chunk.js.map": "/lorem-ism/static/js/2.18e6ff05.chunk.js.map",
     "index.html": "/lorem-ism/index.html",
-    "precache-manifest.b6111b87267a4fc13ead6cfd7f1d0a14.js": "/lorem-ism/precache-manifest.b6111b87267a4fc13ead6cfd7f1d0a14.js",
+    "precache-manifest.249de1e6f2d8b80b58092427610e2a04.js": "/lorem-ism/precache-manifest.249de1e6f2d8b80b58092427610e2a04.js",
     "service-worker.js": "/lorem-ism/service-worker.js",
     "static/css/main.950c016a.chunk.css.map": "/lorem-ism/static/css/main.950c016a.chunk.css.map",
     "static/js/2.18e6ff05.chunk.js.LICENSE.txt": "/lorem-ism/static/js/2.18e6ff05.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e869c040.js",
     "static/js/2.18e6ff05.chunk.js",
     "static/css/main.950c016a.chunk.css",
-    "static/js/main.fa6546c4.chunk.js"
+    "static/js/main.527cde3a.chunk.js"
   ]
 }

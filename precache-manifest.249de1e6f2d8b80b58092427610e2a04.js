@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02f21f958185c48631b76456f645a2cc",
+    "revision": "3aee85dd025156eb5b9c007304e762b9",
     "url": "/lorem-ism/index.html"
   },
   {
-    "revision": "6ae36aec4b29d11e32bd",
+    "revision": "3ca3e20f14e8bc67c199",
     "url": "/lorem-ism/static/css/main.950c016a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lorem-ism/static/js/2.18e6ff05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ae36aec4b29d11e32bd",
-    "url": "/lorem-ism/static/js/main.fa6546c4.chunk.js"
+    "revision": "3ca3e20f14e8bc67c199",
+    "url": "/lorem-ism/static/js/main.527cde3a.chunk.js"
   },
   {
     "revision": "f93312a8af4aef786a7c",
