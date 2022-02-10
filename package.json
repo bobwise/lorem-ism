@@ -40,7 +40,7 @@
     "@sparkdesignsystem/spark-react": "*",
     "formik": "^2.0.8",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react-router-dom": "^5.1.2"
   }
 }
